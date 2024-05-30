@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@tldraw/tldraw": "2.0.0-alpha.17",
+    "@types/axios": "^0.14.0",
+    "axios": "^1.7.2",
     "canvas-size": "^1.2.6",
     "next": "^14.2.3",
     "openai": "^4.47.1",

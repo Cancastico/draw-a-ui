@@ -87,8 +87,8 @@ function ExportButton({ setHtml }: { setHtml: (html: string) => void }) {
             alert("Error from open ai: " + JSON.stringify(json.error));
             return;
           }
-
-          const message = json.choices[0].message.content;
+          console.log(json);
+          const message = json.message;
           const start = message.indexOf("<!DOCTYPE html>");
           const end = message.indexOf("</html>");
           const html = message.slice(start, end + "</html>".length);
